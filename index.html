@@ -8,14 +8,21 @@ and open the template in the editor.
     <head>
         <title>Home</title>
         <meta charset="UTF-8">
-        <link rel="icon" type="image/x-icon" href="PortfolioWork/Logo.png">
+        <link rel="icon" type="image/x-icon" href="PortfolioWork/BrandLogo.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
         
         <style>
-            
+    .spinning-image:hover {
+    transform: rotate(720deg);
+    }
+    
+    .spinning-image {
+    transition: transform 0.75s ease-in-out;
+    }
+
     form {
     width:1000px;
     height:350px;
@@ -126,7 +133,7 @@ and open the template in the editor.
 <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #004F9E;">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-    <img src="PortfolioWork/Logo.png" alt="Logo" height="45" width="45"/>
+    <img class="spinning-image" src="PortfolioWork/BrandLogo.png" alt="Logo" height="45" width="45"/>
     </a>
       
   <div class="container-fluid">
@@ -141,11 +148,11 @@ and open the template in the editor.
       </li>
       
       <li class="nav-item">
-        <a class="nav-link active" href="#Skills">Skills & Experiences</a>
+        <a class="nav-link active" href="#Portfolio">Portfolio</a>
       </li>
       
       <li class="nav-item">
-        <a class="nav-link active" href="#Portfolio">Portfolio</a>
+        <a class="nav-link active" href="#Skills">Skills & Experiences</a>
       </li>
       
       <li class="nav-item">
@@ -225,8 +232,48 @@ and open the template in the editor.
         </div>
         </section>
         
-        <section id="Skills" class="Skills">
+        <section id="Portfolio" class="Portfolio">
         <div class="spacer layer" style="aspect-ratio: 960/520">
+        
+        <br/><br/><br/><br/><br/>
+    
+        <form style="width:290px; height:80px; border-radius:50px;margin-left:600px;">
+           <h1 style="margin-left:28px;">My Portfolio:</h1> 
+        </form>
+        
+        <br/><br/>
+        
+        <div style="display:inline-block;vertical-align:top; margin-left:300px;">
+            <div class="col-4">
+
+                <div class="card " style="width:430px">
+                    <img class="card-img-top" src="PortfolioWork/LittleToyKingdom.png" alt="DigitalArt">
+                    <div class="card-body bg-dark text-white">
+                        <h4 class="card-title">Digital Asset Work</h4>
+                        <a href="DigitalAssets.html" class="btn btn-light">View Works</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="display:inline-block; margin-left: 30px;">
+            <div class="col-4">
+
+                <div class="card " style="width:430px">
+                    <img class="card-img-top" src="PortfolioWork/LittleToyKingdom.png" alt="Programming">
+                    <div class="card-body bg-dark text-white">
+                        <h4 class="card-title">Programming Work (In Progress)</h4>
+                        <a href="" class="btn btn-light">View Works</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        </div>
+        </section>
+        
+        <section id="Skills" class="Skills">
+        <div class="spacer" style="aspect-ratio: 960/560; background-image: url(PortfolioWork/Background2.png);">
         <div class="Content"/>
 
         <br/><br/><br/><br/>
@@ -274,796 +321,7 @@ and open the template in the editor.
         </form>
         </div>
         
-        </div>    
         </div>
-        </section>
-        
-        <section id="Portfolio" class="Portfolio">
-        <div class="spacer" style="aspect-ratio: 960/1000; background-image: url(PortfolioWork/Background2.png);">
-        
-        <br/><br/><br/><br/><br/>
-    
-        <form style="width:290px; height:80px; border-radius:50px;margin-left:620px;">
-           <h1 style="margin-left:15px;">Digital Assets:</h1> 
-        </form>
-        
-        
-        <br/>
-        
-    <form>
-        
-        <div style="display:inline-block;vertical-align:top;">
-            <img style="margin-left:30px; border-radius:20px;" src="PortfolioWork/Coffee.jpg" alt="Work1" height="320" width="200"/>
-        </div>
-            
-        <div style="display:inline-block; margin-left: 30px;">
-            <br/>
-            <h3 style="font-weight: bold; margin-left:1px;">Coffee Poster</h3>
-            </br>
-            <p style="color:white;">Test Test Test test Test Test Test Test Test Test Test Test Test test Test Test Test Test Test Test Test
-            </p>
-            <button style="height:40px; width:150px; border-radius:20px;" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#PortfolioWork1">See more details</button>
-        </div>
-        
-    </form>
-        
-    <br/>
-       
-    <form>
-        
-        <div style="display:inline-block;vertical-align:top; margin-left:30px;">
-            <br/>
-            <h3 style="font-weight: bold; margin-left:1px;">Music Festival Poster</h3>
-            </br>
-            <p style="color:white;">Test Test Test test Test Test Test Test Test Test Test Test Test test Test Test Test Test Test Test Test
-            </p>
-            <button style="height:40px; width:150px; margin-left: 520px; border-radius:20px;" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#PortfolioWork2">See more details</button>
-        </div>
-            
-        <div style="display:inline-block;">
-            <img style="margin-left:30px; border-radius:20px;" src="PortfolioWork/MusicPoster.png" alt="Work2" height="320" width="200"/>
-        </div>
-        
-    </form>
-    
-    <br/>
-    
-     <form>
-        
-        <div style="display:inline-block;vertical-align:top;">
-            <img style="margin-left:30px; border-radius:20px;" src="PortfolioWork/Ramen&LemonTeaPoster.jpg" alt="Work3" height="320" width="200"/>
-        </div>
-            
-        <div style="display:inline-block; margin-left: 30px;">
-            <br/>
-            <h3 style="font-weight: bold; margin-left:1px;">Food & Drink Poster</h3>
-            </br>
-            <p style="color:white;">Test Test Test test Test Test Test Test Test Test Test Test Test test Test Test Test Test Test Test Test
-            </p>
-            <button style="height:40px; width:150px; border-radius:20px;" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#PortfolioWork3">See more details</button>
-        </div>
-        
-    </form>
-        
-    <br/>
-    
-    <form>
-        
-        <div style="display:inline-block;vertical-align:top; margin-left:30px;">
-            <br/>
-            <h3 style="font-weight: bold; margin-left:1px;">Food Alphabets</h3>
-            </br>
-            <p style="color:white;">The food alphabets was designed by myself in early-2023, with the idea of making fonts into
-                <br/>
-                something more eye-catching by making it unique and colorful.
-            </p>
-            <br/><br/><br/><br/>
-            <button style="height:40px; width:150px; margin-left: 520px; border-radius:20px;" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#PortfolioWork4">See more details</button>
-        </div>
-            
-        <div style="display:inline-block;">
-            <img style="margin-left:30px; border-radius:20px;" src="PortfolioWork/FoodAlphabets.png" alt="Work4" height="320" width="200"/>
-        </div>
-        
-    </form>
-    
-    <br/>
-    
-     <form>
-        
-        <div style="display:inline-block;vertical-align:top;">
-            <img style="margin-left:30px; border-radius:20px;" src="PortfolioWork/Coffee.jpg" alt="Work5" height="320" width="200"/>
-        </div>
-            
-        <div style="display:inline-block; margin-left: 30px;">
-            <br/>
-            <h3 style="font-weight: bold; margin-left:1px;">Work 5</h3>
-            </br>
-            <p style="color:white;">
-                Test
-            </p>
-            <button style="height:40px; width:150px; border-radius:20px;" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#PortfolioWork5">See more details</button>
-        </div>
-        
-    </form>
-        
-    <br/>
-    
-    <form>
-        
-        <div style="display:inline-block;vertical-align:top; margin-left:30px;">
-            <br/>
-            <h3 style="font-weight: bold; margin-left:1px;">Work 6</h3>
-            </br>
-            <p style="color:white;">Test Test Test test Test Test Test Test Test Test Test Test Test test Test Test Test Test Test Test Test
-            </p>
-            <button style="height:40px; width:150px; margin-left: 520px; border-radius:20px;" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#PortfolioWork6">See more details</button>
-        </div>
-            
-        <div style="display:inline-block;">
-            <img style="margin-left:30px; border-radius:20px;" src="PortfolioWork/Coffee.jpg" alt="Work6" height="320" width="200"/>
-        </div>
-        
-    </form>
-    
-    <br/><br/><br/>
-    
-    <form style="width:630px; height:80px; border-radius:50px;margin-left:440px;">
-           <h1 style="margin-left:15px;">Web UI & UX Designs/Applications:</h1> 
-        </form>
-    <br/><br/>
-    
-    <form>
-        
-        <div style="display:inline-block;vertical-align:top;">
-            <img style="margin-left:30px; border-radius:20px;" src="PortfolioWork/Coffee.jpg" alt="Work7" height="320" width="200"/>
-        </div>
-            
-        <div style="display:inline-block; margin-left: 30px;">
-            <br/>
-            <h3 style="font-weight: bold; margin-left:1px;">The Plant Emporium (UI & UX Design)</h3>
-            </br>
-            <p style="color:white;">A complete website design that I designed for a online plant retail store using Adobe XD
-                <br/>
-                 in May 2023. It features a simplistic design using natural colors.
-            </p>
-            <br/><br/><br/><br/>
-            <button style="height:40px; width:150px; border-radius:20px;" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#PortfolioWork7">See more details</button>
-        </div>
-        
-    </form>
-        
-    <br/>
-    
-    <form>
-        
-        <div style="display:inline-block;vertical-align:top; margin-left:30px;">
-            <br/>
-            <h3 style="font-weight: bold; margin-left:1px;">Little Toy Kingdom (UI & UX Design)</h3>
-            </br>
-            <p style="color:white;">Test Test Test test Test Test Test Test Test Test Test Test Test test Test Test Test Test Test Test Test
-            </p>
-        <button style="height:40px; width:150px; margin-left: 520px; border-radius:20px;" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#PortfolioWork8">See more details</button>
-        </div>
-            
-        <div style="display:inline-block;">
-            <img style="margin-left:30px; border-radius:20px;" src="PortfolioWork/Coffee.jpg" alt="Work8" height="320" width="200"/>
-        </div>
-        
-    </form>
-    
-    <br/>
-    
-     <form>
-        
-        <div style="display:inline-block;vertical-align:top;">
-            <img style="margin-left:30px; border-radius:20px;" src="PortfolioWork/Coffee.jpg" alt="Work9" height="320" width="200"/>
-        </div>
-            
-        <div style="display:inline-block; margin-left: 30px;">
-            <br/>
-            <h3 style="font-weight: bold; margin-left:1px;">Movie Website (Web Application)</h3>
-            </br>
-            <p style="color:white;">Test Test Test test Test Test Test Test Test Test Test Test Test test Test Test Test Test Test Test Test
-            </p>
-            <button style="height:40px; width:150px; border-radius:20px;" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#PortfolioWork9">See more details</button>
-        </div>
-        
-    </form>
-        
-    <br/>
-    
-    <form>
-        
-        <div style="display:inline-block;vertical-align:top; margin-left:30px;">
-            <br/>
-            <h3 style="font-weight: bold; margin-left:1px;">Work 10</h3>
-            </br>
-            <p style="color:white;">Test Test Test test Test Test Test Test Test Test Test Test Test test Test Test Test Test Test Test Test
-            </p>
-            <button style="height:40px; width:150px; margin-left: 520px; border-radius:20px;" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#PortfolioWork10">See more details</button>
-        </div>
-            
-        <div style="display:inline-block;">
-            <img style="margin-left:30px; border-radius:20px;" src="PortfolioWork/Coffee.jpg" alt="Work10" height="320" width="200"/>
-        </div>
-        
-    </form>
-    
-    <br/>
-    
-     <form>
-        
-        <div style="display:inline-block;vertical-align:top;">
-            <img style="margin-left:30px; border-radius:20px;" src="PortfolioWork/Coffee.jpg" alt="Work11" height="320" width="200"/>
-        </div>
-            
-        <div style="display:inline-block; margin-left: 30px;">
-            <br/>
-            <h3 style="font-weight: bold; margin-left:1px;">Work 11</h3>
-            </br>
-            <p style="color:white;">Test Test Test test Test Test Test Test Test Test Test Test Test test Test Test Test Test Test Test Test
-            </p>
-            <button style="height:40px; width:150px; border-radius:20px;" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#PortfolioWork11">See more details</button>
-        </div>
-        
-    </form>
-        
-    <br/>
-    
-    <form>
-        
-        <div style="display:inline-block;vertical-align:top; margin-left:30px;">
-            <br/>
-            <h3 style="font-weight: bold; margin-left:1px;">Work 12</h3>
-            </br>
-            <p style="color:white;">Test Test Test test Test Test Test Test Test Test Test Test Test test Test Test Test Test Test Test Test
-            </p>
-            <button style="height:40px; width:150px; margin-left: 520px; border-radius:20px;" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#PortfolioWork12">See more details</button>
-        </div>
-            
-        <div style="display:inline-block;">
-            <img style="margin-left:30px; border-radius:20px;" src="PortfolioWork/Coffee.jpg" alt="Work12" height="320" width="200"/>
-        </div>
-        
-    </form>
-    
-        <div class="modal fade" id="PortfolioWork1" tabindex="-1" aria-labelledby="Work1Label" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                        
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="Work1Label">Coffee Poster</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                        
-                    <div class="scroll-bg">
-                        <div class="scroll-div">
-                            <div class="scroll-object">
-                                <div style="display:inline-block;vertical-align:top;">
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobeIllustrator.png" alt="Illustrator" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobeXD.png" alt="XD" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                </div>
-
-                                <div style="display:inline-block;">
-                                    <h3>Title</h3>
-                                    </br>
-                                    <p>Test
-                                        <br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                        
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="PortfolioWork2" tabindex="-1" aria-labelledby="Work2Label" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                        
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="Work2Label">Music Festival Poster</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                        
-                    <div class="scroll-bg">
-                        <div class="scroll-div">
-                            <div class="scroll-object">
-                                <div style="display:inline-block;vertical-align:top;">
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobeIllustrator.png" alt="Illustrator" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobeXD.png" alt="XD" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                </div>
-
-                                <div style="display:inline-block;">
-                                    <h3>Title</h3>
-                                    </br>
-                                    <p>Test
-                                        <br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                        
-                </div>
-            </div>
-        </div>
-        
-        <div class="modal fade" id="PortfolioWork3" tabindex="-1" aria-labelledby="Work3Label" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                        
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="Work3Label">Food & Drink poster</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                        
-                    <div class="scroll-bg">
-                        <div class="scroll-div">
-                            <div class="scroll-object">
-                                <div style="display:inline-block;vertical-align:top;">
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobeIllustrator.png" alt="Illustrator" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobeXD.png" alt="XD" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                </div>
-
-                                <div style="display:inline-block;">
-                                    <h3>Title</h3>
-                                    </br>
-                                    <p>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                        
-                </div>
-            </div>
-        </div>
-        
-        <div class="modal fade" id="PortfolioWork4" tabindex="-1" aria-labelledby="Work4Label" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                        
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="Work4Label">Food Alphabets</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                        
-                    <div class="scroll-bg">
-                        <div class="scroll-div">
-                            <div class="scroll-object">
-                                <div style="display:inline-block;vertical-align:top; margin-left:30px;">
-                                    <img style="margin-left:10px;" src="PortfolioWork/FoodAlphabets.png" alt="Alphabets" height="350" width="230"/>
-                                    <p style="color:black; margin-left:78px;">(Final Design)</p>
-                                    <img style="margin-left:10px;" src="PortfolioWork/Alphabet.png" alt="Alphabets" height="350" width="230"/>
-                                    <p style="color:black; margin-left:78px;">(Mood board)</p>
-                                    
-                                </div>
-
-                                <div style="display:inline-block; margin-left:40px;">
-                                    <h3>Title</h3>
-                                    </br>
-                                    <p>The inspiration behind of the food alphabets is due to my 
-                                        </br>
-                                        love for food. When starting on the first few letters of
-                                        </br>
-                                        the alphabet, I thought about how I could make the fonts
-                                        </br>
-                                        look eye-catching and unique, so I decided to use food to
-                                        </br>
-                                        represent letters, since they have different colors, and 
-                                        </br>
-                                        there’s a large variety of food I can pick out to represent
-                                        </br>
-                                         the letters in the alphabet. Most of the food I used in 
-                                        </br>
-                                        the design are my favourite snacks or food, such as the 
-                                        <br/>
-                                        chips, sushi and ice cream. During the design process, I 
-                                        </br>
-                                        realized that some letters are difficult to represent, such
-                                        <br/>
-                                         as the letter “Y”, so I thought about using an ice cream 
-                                        </br>
-                                        that somebody took a  large bite out of to create the  
-                                        </br>
-                                        space between the 2 lines. Likewise, for stacking up sushi
-                                        <br/>
-                                        rolls to form the letter “L”.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                        
-                </div>
-            </div>
-        </div>
-        
-        <div class="modal fade" id="PortfolioWork5" tabindex="-1" aria-labelledby="Work5Label" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                        
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="Work5Label">Work 5</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                        
-                    <div class="scroll-bg">
-                        <div class="scroll-div">
-                            <div class="scroll-object">
-                                <div style="display:inline-block;vertical-align:top;">
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobeIllustrator.png" alt="Illustrator" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobeXD.png" alt="XD" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                </div>
-
-                                <div style="display:inline-block;">
-                                    <h3>Title</h3>
-                                    </br>
-                                    <p>Test
-                                        <br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                        
-                </div>
-            </div>
-        </div>
-        
-        <div class="modal fade" id="PortfolioWork6" tabindex="-1" aria-labelledby="Work6Label" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                        
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="Work6Label">Work 6</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                        
-                    <div class="scroll-bg">
-                        <div class="scroll-div">
-                            <div class="scroll-object">
-                                <div style="display:inline-block;vertical-align:top;">
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobeIllustrator.png" alt="Illustrator" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobeXD.png" alt="XD" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                </div>
-
-                                <div style="display:inline-block;">
-                                    <h3>Title</h3>
-                                    </br>
-                                    <p>Test
-                                        <br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                        
-                </div>
-            </div>
-        </div>
-        
-        <div class="modal fade" id="PortfolioWork7" tabindex="-1" aria-labelledby="Work7Label" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                        
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="Work7Label">Work 7</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                        
-                    <div class="scroll-bg">
-                        <div class="scroll-div">
-                            <div class="scroll-object">
-                                <div style="display:inline-block;vertical-align:top;">
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobeIllustrator.png" alt="Illustrator" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobeXD.png" alt="XD" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                </div>
-
-                                <div style="display:inline-block;">
-                                    <h3>Title</h3>
-                                    </br>
-                                    <p>Test
-                                        <br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                        
-                </div>
-            </div>
-        </div>
-        
-        <div class="modal fade" id="PortfolioWork8" tabindex="-1" aria-labelledby="Work8Label" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                        
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="Work8Label">Work 8</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                        
-                    <div class="scroll-bg">
-                        <div class="scroll-div">
-                            <div class="scroll-object">
-                                <div style="display:inline-block;vertical-align:top;">
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobeIllustrator.png" alt="Illustrator" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobeXD.png" alt="XD" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                </div>
-
-                                <div style="display:inline-block;">
-                                    <h3>Title</h3>
-                                    </br>
-                                    <p>Test
-                                        <br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                        
-                </div>
-            </div>
-        </div>
-        
-        <div class="modal fade" id="PortfolioWork9" tabindex="-1" aria-labelledby="Work9Label" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                        
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="Work9Label">Work 9</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                        
-                    <div class="scroll-bg">
-                        <div class="scroll-div">
-                            <div class="scroll-object">
-                                <div style="display:inline-block;vertical-align:top;">
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobeIllustrator.png" alt="Illustrator" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobeXD.png" alt="XD" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                </div>
-
-                                <div style="display:inline-block;">
-                                    <h3>Title</h3>
-                                    </br>
-                                    <p>Test
-                                        <br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                        
-                </div>
-            </div>
-        </div>
-        
-        <div class="modal fade" id="PortfolioWork10" tabindex="-1" aria-labelledby="Work10Label" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                        
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="Work10Label">Work 10</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                        
-                    <div class="scroll-bg">
-                        <div class="scroll-div">
-                            <div class="scroll-object">
-                                <div style="display:inline-block;vertical-align:top;">
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobeIllustrator.png" alt="Illustrator" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobeXD.png" alt="XD" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                </div>
-
-                                <div style="display:inline-block;">
-                                    <h3>Title</h3>
-                                    </br>
-                                    <p>Test
-                                        <br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                        
-                </div>
-            </div>
-        </div>
-        
-        <div class="modal fade" id="PortfolioWork11" tabindex="-1" aria-labelledby="Work11Label" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                        
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="Work11Label">Work 11</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                        
-                    <div class="scroll-bg">
-                        <div class="scroll-div">
-                            <div class="scroll-object">
-                                <div style="display:inline-block;vertical-align:top;">
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobeIllustrator.png" alt="Illustrator" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobeXD.png" alt="XD" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                </div>
-
-                                <div style="display:inline-block;">
-                                    <h3>Title</h3>
-                                    </br>
-                                    <p>Test
-                                        <br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                        
-                </div>
-            </div>
-        </div>
-        
-        <div class="modal fade" id="PortfolioWork12" tabindex="-1" aria-labelledby="Work12Label" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                        
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="Work12Label">Work 12</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                        
-                    <div class="scroll-bg">
-                        <div class="scroll-div">
-                            <div class="scroll-object">
-                                <div style="display:inline-block;vertical-align:top;">
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobeIllustrator.png" alt="Illustrator" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobeXD.png" alt="XD" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                    <br/>
-                                    <img style="margin-left:10px;" src="PortfolioWork/AdobePhotoshop.png" alt="Photoshop" height="125" width="125"/>
-                                </div>
-
-                                <div style="display:inline-block;">
-                                    <h3>Title</h3>
-                                    </br>
-                                    <p>Test
-                                        <br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>Test<br/>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                        
-                </div>
-            </div>
-        </div>
-        
         </div>
         </section>
         
